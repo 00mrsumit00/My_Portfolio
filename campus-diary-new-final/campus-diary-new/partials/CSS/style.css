@@ -1,0 +1,1037 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.main {
+    height: fit-content;
+    width: 100vw;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.nav-main {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav img {
+    width: 6vw;
+    height: 5vw;
+}
+
+.nav #img2 {
+    display: none;
+}
+
+.nav-main a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: black;
+    padding: 10PX 15PX;
+    border-radius: 8PX;
+}
+
+.active {
+    color: #853a2f;
+    font-size: 20px;
+}
+
+.activeSection{
+    background-color: white;
+}
+
+.nav-main .btn-1 {
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    background-color: #FF735C;
+    color: white;
+    font-weight: 600;
+    width: 8vw;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.nav i {
+
+    display: none;
+
+}
+
+.drop-down {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: -110%;
+    transition: right 0.5s ease;
+    top: 60px;
+    width: 100vw;
+    background-color: white;
+    padding: 5vw 10vw;
+    align-items: end;
+    gap: 10px;
+}
+
+.show {
+    right: 0;
+}
+
+
+.drop-down a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 8px;
+}
+
+.temp {
+    padding-top: 60px;
+}
+
+.main .content {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    position: relative;
+}
+
+.main .content .left {
+    height: 100%;
+    width: 55%;
+    padding: 3.6vw 5vw;
+}
+
+.main .content .left h1 {
+    font-size: 3.2vw;
+}
+
+.main .content .left h1 span {
+    color: #FF735C;
+}
+
+.main .content .left p {
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    width: 80%;
+    color: black;
+}
+
+.main .content .left button {
+    margin-top: 3vw;
+    font-size: 2.2vw;
+    padding: 1vw 1vw;
+    background-color: #FF735C;
+    color: white;
+    font-weight: 500;
+    width: 20vw;
+    border: none;
+    border-radius: 5px;
+}
+
+.main .content .left button i {
+    margin-left: 1vw;
+}
+
+.main .content .right {
+    height: 100%;
+    width: 45%;
+}
+
+.main .content .right img {
+    width: 40vw;
+    height: 38vw;
+}
+
+.line {
+    height: 2vh;
+    background-color: #e5b369;
+
+}
+
+
+/* Second Body CSS for all */
+.second-body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e8b9a9;
+}
+
+.second-body .card-container {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    top: 5vw;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+}
+
+
+/* Cards CSS for all cards */
+.second-body .card-container .cards {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 25vw;
+    border-radius: 20px;
+    background-color: white;
+    margin-right: 10vw;
+    transform: translateX(40vw);
+    transition: transform 0.3s ease;
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
+
+/* button CSS for all elements */
+.second-body .card-container .cards .btn-learn {
+    width: 80%;
+    height: 4vw;
+    font-size: 1.5vw;
+    background-color: rgb(75, 75, 214);
+    border: none;
+}
+
+.second-body .card-container .cards .btn-learn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Card 1 individual CSS */
+#card1 {
+    gap: 2vw;
+}
+
+#card1 img {
+    width: 12vw;
+}
+
+
+/* Card 2 individual CSS */
+#card2 {
+    gap: 2vw;
+}
+
+#card2 img {
+    width: 12vw;
+}
+
+
+/* Card 3 individual CSS */
+#card3 {
+    gap: 1vw;
+}
+
+#card3 img {
+    width: 18vw;
+}
+
+
+/* Card 4 individual CSS */
+#card4 {
+    gap: 1vw;
+}
+
+#card4 img {
+    width: 18vw;
+}
+
+
+/* Card 5 individual CSS */
+#card5 {
+    font-size: 1.39vw;
+    gap: 1.2vw;
+}
+
+#card5 img {
+    width: 18vw;
+}
+
+
+/* Card 6 individual CSS */
+#card6 {
+    gap: 1vw;
+}
+
+#card6 img {
+    width: 17vw;
+}
+
+
+/* Fourth body CSS */
+.fourth-body {
+    height: fit-content;
+    background-color: white;
+}
+
+.fourth-body .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fourth-body .content .left {
+    height: 100%;
+    width: 50%;
+}
+
+.fourth-body .content .left img {
+    width: 100%;
+}
+
+.fourth-body .content .right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+}
+
+.fourth-body .content .right h1 {
+    font-size: 4em;
+    color: #667FEA
+}
+
+
+.fourth-body .content .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.cont-for-email-and-sub {
+    display: flex;
+    gap: 2vw;
+}
+
+.fourth-body .content .right form input {
+    height: 10vh;
+    font-size: 1em;
+    padding-left: 2vw;
+    border: none;
+    background-color: #EFEBF9;
+    border-radius: 5px;
+}
+
+.fourth-body .content .right form .btn {
+    height: 40px;
+    width: 150px;
+    background-color: #4B4BD6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    font-weight: 700;
+}
+
+.fourth-body .content .right form .btn svg {
+    width: 1.7vw;
+}
+
+/* Fifth body CSS Starts */
+.fifth-body {
+    height: 150vh;
+    background-color: rgb(240, 238, 238);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Setting div for Avi  */
+.fifth-body .avi {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+
+}
+
+.fifth-body .avi .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 6vw;
+    gap: 2.5vw;
+
+}
+
+.fifth-body .avi .left .left-top p {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.fifth-body .avi .left a {
+    text-decoration: none;
+}
+
+.fifth-body .avi .left :nth-child(2) {
+    color: #667FEA;
+}
+
+.fifth-body .avi .left .left-middle {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.fifth-body .avi .left .left-middle svg {
+    width: 3vw;
+}
+
+.fifth-body .avi .left .left-middle a:nth-child(2) svg {
+    width: 2.5vw;
+}
+
+.fifth-body .avi .left .left-middle a:nth-child(3) svg {
+    width: 3.5vw;
+}
+
+.fifth-body .avi .left .left-bottom a button {
+    width: 160px;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fifth-body .avi .left .left-bottom a button span {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: rgb(26, 26, 26);
+}
+
+.fifth-body .avi .left .left-bottom a button svg {
+    width: 3vw;
+}
+
+.fifth-body .avi .right {
+    width: 50%;
+    height: 100%;
+
+}
+
+.fifth-body .avi .right .img-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.fifth-body .avi .right .img-box .avi-img {
+    z-index: 2;
+    width: 23vw;
+    height: 23vw;
+    border-radius: 50%;
+}
+
+.fifth-body .avi .right .img-box img {
+    position: absolute;
+    width: 30vw;
+    height: 25vw;
+}
+
+.fifth-body .avi .right .img-box .shape {
+    position: absolute;
+    width: 23vw;
+    height: 23vw;
+    background-color: rgb(177, 222, 237);
+    border-radius: 50%;
+}
+
+.sep {
+    height: 2px;
+    background-color: rgb(177, 222, 237);
+}
+
+/* Setting div for Sumit  */
+.fifth-body .sumit {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+}
+
+.fifth-body .sumit .left {
+    width: 50%;
+    height: 100%;
+}
+
+
+.fifth-body .sumit .left .img-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fifth-body .sumit .left .img-box .sumit-img {
+    z-index: 2;
+    width: 21vw;
+    height: 24vw;
+    border-radius: 50%;
+}
+
+.fifth-body .sumit .left .img-box img {
+    position: absolute;
+    width: 30vw;
+    height: 25vw;
+}
+
+.fifth-body .sumit .left .img-box .shape {
+    position: absolute;
+    width: 20vw;
+    height: 23vw;
+    background-color: rgb(177, 222, 237);
+    border-radius: 50%;
+}
+
+
+.fifth-body .sumit .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 6vw;
+    gap: 2.5vw;
+}
+
+.fifth-body .sumit .right .right-top p {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.fifth-body .sumit .right :nth-child(2) {
+    color: #667FEA;
+}
+
+.fifth-body .sumit .right a {
+    text-decoration: none;
+}
+
+.fifth-body .sumit .right .right-middle {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.fifth-body .sumit .right .right-middle a:nth-child(2) svg {
+    width: 2.5vw;
+}
+
+.fifth-body .sumit .right .right-middle a:nth-child(3) svg {
+    width: 3.5vw;
+}
+
+
+.fifth-body .sumit .right .right-middle svg {
+    width: 3vw;
+}
+
+.fifth-body .sumit .right .right-bottom a button {
+    width: 160px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fifth-body .sumit .right .right-bottom a button span {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: rgb(26, 26, 26);
+}
+
+.fifth-body .sumit .right .right-bottom a button svg {
+    width: 3vw;
+}
+
+
+/* -------------- media queries----------------- */
+
+@media (max-width:600px) {
+    .nav {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        color: black;
+        padding: 0 5vw;
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+    }
+
+    .nav-main a {
+        text-decoration: none;
+        font-size: 3vw;
+        display: none;
+    }
+
+    .nav i {
+        display: contents;
+        font-size: 8vw;
+        font-weight: 100;
+        color: black;
+
+    }
+
+    .nav #close-btn {
+        display: none;
+    }
+
+    .nav-main .btn-1 {
+        display: none;
+    }
+
+    .main .content {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .main .content .left {
+        margin-top: 2vh;
+        margin-left: 2vw;
+        height: 100%;
+        width: 98%;
+        padding: 7vw 5vw 0 5vw;
+    }
+
+    .main .content .left h1 {
+        font-size: 10vw;
+    }
+
+    .main .content .left p {
+        margin-top: 8vw;
+        font-size: 5.5vw;
+        font-weight: 500;
+        width: 100%;
+        color: black;
+    }
+
+    .main .content .left button {
+        width: 50vw;
+        height: 15vw;
+        margin-top: 10vw;
+        font-size: 6vw;
+        padding: 1vw 1vw;
+        background-color: #FF735C;
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .main .content .right {
+        margin-top: 5vh;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main .content .right img {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .nav img {
+        display: none;
+    }
+
+    .nav #img2 {
+        display: block;
+        height: 10vw;
+        width: 10vw;
+
+    }
+
+    .second-body {
+        height: 60vh;
+        width: 100vw;
+        background-color: #e8b9a9;
+
+    }
+
+    .second-body .card-container {
+        width: 100%;
+        height: 50vh;
+        overflow-x: hidden;
+        position: relative;
+        top: 0vw;
+        display: flex;
+        align-items:center ;
+        /* backdrop-filter: blur(10px); */
+
+    }
+
+    .second-body .card-container .cards {
+        flex: 0 0 auto;
+        display: flex;
+        width: 60vw;
+        height: 40vh;
+        background-color: white;
+        border-radius: 10px;
+        transform: translateX(20vw);
+        margin-right: 5vw;
+        /* margin-top: 3vh; */
+    }
+
+    /* Card 1 individual CSS */
+    #card1 {
+        gap: 4.5vw;
+        font-size: 4vw;
+    }
+
+    #card1 img {
+        width: 50vw;
+    }
+
+    #card1 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+
+    /* Card 2 individual CSS */
+    #card2 {
+        gap: 5vw;
+        font-size: 4vw;
+    }
+
+    #card2 img {
+        width: 50vw;
+    }
+
+    #card2 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+
+    /* Card 3 individual CSS */
+    #card3 {
+        gap: 5vw;
+        font-size: 4vw;
+    }
+
+    #card3 img {
+        width: 55vw;
+    }
+
+    #card3 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+
+    /* Card 4 individual CSS */
+    #card4 {
+        gap: 4vw;
+        font-size: 4vw;
+    }
+
+    #card4 img {
+        width: 60vw;
+        /* height: 30vw; */
+
+    }
+
+    #card4 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+
+    /* Card 5 individual CSS */
+    #card5 {
+        font-size: 4vw;
+        gap: 4vw;
+    }
+
+    #card5 img {
+        width: 60vw;
+    }
+
+    #card5 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+
+    /* Card 6 individual CSS */
+    #card6 {
+        gap: 3vw;
+        font-size: 4vw;
+    }
+
+    #card6 img {
+        width: 60vw;
+    }
+
+    #card6 button {
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .fifth-body {
+        height: 80vh;
+    }
+
+
+    .fifth-body .avi .left .left-top p {
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+    .fifth-body .sumit .right .right-top p {
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+    .fifth-body .sumit .left .img-box img {
+        position: absolute;
+        width: 45vw;
+        height: 40vw;
+        top: 6vh;
+    }
+
+    .fifth-body .sumit .left .img-box .shape {
+        position: absolute;
+        width: 33vw;
+        height: 33vw;
+        background-color: rgb(177, 222, 237);
+        border-radius: 50%;
+        top: 7.5vh;
+    }
+
+    .fifth-body .avi .right .img-box img {
+        position: absolute;
+        width: 45vw;
+        height: 40vw;
+        top: 6vh;
+    }
+
+    .fifth-body .avi .right .img-box .shape {
+        position: absolute;
+        width: 33vw;
+        height: 33vw;
+        background-color: rgb(177, 222, 237);
+        border-radius: 50%;
+        top: 7.5vh;
+    }
+
+    /* Setting the icon for Avi  */
+    .fifth-body .avi .left .left-middle svg {
+        width: 7vw;
+    }
+
+    .fifth-body .avi .left .left-middle a:nth-child(2) svg {
+        width: 5.5vw;
+    }
+
+    .fifth-body .avi .left .left-middle a:nth-child(3) svg {
+        width: 7.5vw;
+    }
+
+    .fifth-body .avi .left .left-middle {
+        gap: 4vw;
+    }
+
+
+    /* Setting the icons for Sumit  */
+    .fifth-body .sumit .right .right-middle svg {
+        width: 7vw;
+    }
+
+    .fifth-body .sumit .right .right-middle a:nth-child(2) svg {
+        width: 5.5vw;
+    }
+
+    .fifth-body .sumit .right .right-middle a:nth-child(3) svg {
+        width: 7.5vw;
+    }
+
+    .fifth-body .sumit .right .right-middle {
+        gap: 4vw;
+    }
+
+
+    /* Portfolio button for Avi  */
+
+    .fifth-body .avi .left .left-bottom a button {
+        width: 140px;
+        gap: 5px;
+    }
+
+    .fifth-body .avi .left .left-bottom a button span {
+        font-size: 1.2em;
+    }
+
+    .fifth-body .avi .left .left-bottom a button svg {
+        width: 7vw;
+    }
+
+    /* Portfolio button for Sumit  */
+    .fifth-body .sumit .right .right-bottom a button {
+        width: 140px;
+        gap: 5px;
+    }
+
+    .fifth-body .sumit .right .right-bottom a button span {
+        font-size: 1.2em;
+    }
+
+    .fifth-body .sumit .right .right-bottom a button svg {
+        width: 7vw;
+    }
+
+    /* Contact Us Page CSS in media queries */
+    fourth-body {
+        height: 50vh;
+        background-color: white;
+    }
+
+    .fourth-body .content {
+        height: 50vh;
+        width: 100%;
+        display: block;
+    }
+
+    .fourth-body .content .left {
+        height: fit-content;
+        width: 100%;
+        position: relative;
+    }
+
+    .fourth-body .content .left img {
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    .fourth-body .content .right {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .fourth-body .content .right h1 {
+        font-size: 2em;
+        color: #667FEA
+    }
+
+
+    .fourth-body .content .right form {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-for-email-and-sub {
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-for-email-and-sub #dif-inp {
+        width: 40%;
+    }
+
+    .fourth-body .content .right form input {
+        height: 6vh;
+        width: 82%;
+        font-size: 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-clip: padding-box;
+    }
+
+    .fourth-body .content .right form input::placeholder {
+        color: white;
+    }
+    
+    .fourth-body .content .right form .btn {
+        height: 40px;
+        width: 120px;
+        gap: 3vw;
+        background-color: rgba(102, 127, 234, 0.6);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .fourth-body .content .right form .btn svg {
+        width: 6vw;
+    }
+
+}
